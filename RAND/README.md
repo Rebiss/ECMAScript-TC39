@@ -26,11 +26,11 @@ are integer constants that specify the generator. If c = 0, the generator is oft
 
 A benefit of LCGs is that with appropriate choice of parameters, the period is known and long. Although not the only criterion, too short a period is a fatal flaw in a pseudorandom number generator.
 
-While LCGs are capable of producing pseudorandom numbers which can pass formal tests for randomness, this is extremely sensitive to the choice of the parameters m and a. For example, a = 1 and c = 1 produces a simple modulo-m counter, which has a long period, but is obviously non-random.
+While LCGs are capable of producing pseudorandom numbers which can pass formal tests for randomness, this is extremely sensitive to the choice of the parameters m and a. For example, a = 1 and   c = 1 produces a simple modulo-m counter, which has a long period, but is obviously non-random.
 
 Historically, poor choices for a have led to ineffective implementations of LCGs. A particularly illustrative example of this is RANDU, which was widely used in the early 1970s and led to many results which are currently being questioned because of the use of this poor LCG.
 
-There are three common families of parameter choice: **m prime, c = 0 **
+There are three common families of parameter choice: **m prime, c = 0**
 
 This is the original Lehmer RNG construction. The period is m−1 if the multiplier a is chosen to be a primitive element of the integers modulo m. The initial state must be chosen between 1 and m−1.
 
@@ -40,7 +40,7 @@ If a double-width product is unavailable, and the multiplier is chosen carefully
 
 A second disadvantage is that it is awkward to convert the value 1 ≤ x < m to uniform random bits. If a prime just less than a power of 2 is used, sometimes the missing values are simply ignored.
 
-**m a power of 2, c = 0 **
+**m a power of 2, c = 0**
 
 Choosing m to be a power of 2, most often m = 232 or m = 264, produces a particularly efficient LCG, because this allows the modulus operation to be computed by simply truncating the binary representation. In fact, the most significant bits are usually not computed at all. There are, however, disadvantages.
 
@@ -48,7 +48,7 @@ This form has maximal period m/4, achieved if a ≡ 3 or a ≡ 5 (mod 8). The in
 
 A more serious issue with the use of a power-of-two modulus is that the low bits have a shorter period than the high bits. The lowest-order bit of X never changes (X is always odd), and the next two bits alternate between two states. (If a ≡ 5 (mod 8), then bit 1 never changes and bit 2 alternates. If a ≡ 3 (mod 8), then bit 2 never changes and bit 1 alternates.) Bit 3 repeats with a period of 4, bit 4 has a period of 8, and so on. Only the most significant bit of X achieves the full period.
 
-**c ≠ 0**, c ≠ 0, correctly chosen parameters allow a period equal to m, for all seed values. This will occur if and only if
+**c ≠ 0** when c ≠ 0, correctly chosen parameters allow a period equal to m, for all seed values. This will occur if and only if
 
 ```
   1. m and c are relatively prime,
