@@ -10,5 +10,15 @@ where X is the sequence of pseudorandom values, and
 
 ![alt-text](https://wikimedia.org/api/rest_v1/media/math/render/svg/d4ede7bedbdf2b8a8c7a8f6bf240b04bdf71515e)
 
-are integer constants that specify the generator. If c = 0, the generator is often called a multiplicative congruential generator (MCG), or Lehmer RNG. If c ≠ 0, the method is called a mixed congruential generator
+![alt-text](https://wikimedia.org/api/rest_v1/media/math/render/svg/d4ede7bedbdf2b8a8c7a8f6bf240b04bdf71515e)
+
+![alt-text](https://wikimedia.org/api/rest_v1/media/math/render/svg/5054822029125050b7a7ad66c6d67237200ce199)
+
+![alt-text](https://wikimedia.org/api/rest_v1/media/math/render/svg/8cfbbbe2ead58cc66054f343ae20f4d7ab8b7bed)
+
+
+
+are integer constants that specify the generator. If c = 0, the generator is often called a multiplicative congruential generator (MCG), or Lehmer RNG. If c ≠ 0, the method is called a mixed congruential generator.
+
+![alt-text](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Linear_congruential_generator_visualisation.svg/480px-Linear_congruential_generator_visualisation.svg.png)
 
