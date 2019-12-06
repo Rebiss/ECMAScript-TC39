@@ -1,4 +1,5 @@
 # Linear congruential generator
+![alt-text](https://cdn6.aptoide.com/imgs/6/2/2/622ceabcbf6409b1b250048f4ec72416_icon.png?w=240)
 
 A **linear congruential generator (LCG)** is an algorithm that yields a sequence of pseudo-randomized numbers calculated with a discontinuous piecewise linear equation. The method represents one of the oldest and best-known pseudorandom number generator algorithms. The theory behind them is relatively easy to understand, and they are easily implemented and fast, especially on computer hardware which can provide modulo arithmetic by storage-bit truncation.
 
@@ -52,8 +53,8 @@ A more serious issue with the use of a power-of-two modulus is that the low bits
 
 ```
   1. m and c are relatively prime,
-  2. a-1 is divisible by all prime factors of {\displaystyle m} m,
-  3. a-1 is divisible by 4 if {\displaystyle m} m is divisible by 4.
+  2. a-1 is divisible by all prime factors of m,
+  3. a-1 is divisible by 4 if m is divisible by 4.
 ```
 
 These three requirements are referred to as the Hull–Dobell Theorem.
