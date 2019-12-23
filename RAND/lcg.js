@@ -8,9 +8,8 @@ const Lcg = () => {
     const a = 16807;
     const m = 0x7fffffff;
 
-    seed = seed * (a % m);
-
-    return seed;
+    return seed * (a % m);
+ 
 }
 
 console.log( '****', Lcg())
