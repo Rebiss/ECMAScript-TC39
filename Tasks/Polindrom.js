@@ -24,7 +24,7 @@ console.log(isPolindrom(index));
 // }
 
 // console.log('REPATE===> ', isRepit(str))
-const word = 'Andrannnik barev vzgo'
+const word = 'anina'
 // w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')')
 const duplicateEncode = (word) => {
     return word
